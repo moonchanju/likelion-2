@@ -1,0 +1,50 @@
+:root {
+    --text-color: #fff;
+    --background-color: rgba(22, 22, 23, 0.8);
+  }
+  /* 매번 지정해사용하기가 힘들어서 이런식으로 루트 접근 지정자 설정
+   네비게이션바의 색깔깔*/
+
+body {
+    color: var(--text-color);
+    background-color: #000;
+    font-weight: 400;
+}
+/* 배경화면 전체 색,글씨 지정정 */
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+/*a하이퍼링크의 아래 줄 삭제 */
+
+.navbar {
+    display:flex;
+    /**/
+    align-items:center;
+    /*navbar의 수직부분에 중앙 정렬*/
+    justify-content: center;
+    /*화면 중앙으로 콘텐츠를 정렬*/
+    gap:40px;
+    /*전체요소들의 간격 40px만큼 이격*/
+    background-color: var(--background-color);
+}
+
+.navbar_menu{
+ display:flex;
+ gap:20px;
+}
+.navbar_links{
+display:flex;
+gap:20px;
+}
+
+.navbar_menu a{
+    padding: 0px 5px;
+}
+
+.navbar_menu a:hover{
+    background-color: var(--text-color);
+    color:#000;
+    border-radius: 5px;
+}
